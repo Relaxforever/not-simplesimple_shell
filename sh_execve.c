@@ -25,6 +25,7 @@ int sh_execve(char **args)
 			aux(args, bin);
 			if (tmp == NULL)
 			{
+				perror("./hsh");
 				free_double(bin);
 				free_double(args);
 				 exit(0);
