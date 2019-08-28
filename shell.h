@@ -1,4 +1,3 @@
-
 #ifndef _SHELLLIST_H_
 #define _SHELLLIST_H_
 #define _GNU_SOURCE
