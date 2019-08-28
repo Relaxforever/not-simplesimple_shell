@@ -28,7 +28,15 @@ int sh_help(char **args)
 {
 	(void) args;
 	write(STDOUT_FILENO, "Welcome to our own shell.\n", 26);
-	write(STDOUT_FILENO, "Our current Built-ins are \n cd \n exit \n help\n", 45);
+	write(STDOUT_FILENO, "Our current Built-ins are \n", 29);
+	write(STDOUT_FILENO, "cd - change the current directory to a Folder\n", 47);
+	write(STDOUT_FILENO, " exit - cause normal process termination\n", 41);
+	write(STDOUT_FILENO, "  help - display useful information\n", 36);
+	write(STDOUT_FILENO, "  Also support commands like\n", 29);
+	write(STDOUT_FILENO, "  cp - copy files and directories\n", 35);
+	write(STDOUT_FILENO, " clear - clear the terminal screen\n", 36);
+	write(STDOUT_FILENO, " cat - print on the standard output\n", 37);
+	write(STDOUT_FILENO, " echo - display a line of text\n", 31);
 return (1);
 }
 
