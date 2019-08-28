@@ -12,7 +12,7 @@ char *sh_readline(void)
 
 	if (getline(&line, &len, stdin) == -1)
 	{
-		write(1, "\n", 1);
+		write(STDOUT_FILENO, "\n", 1);
 		free(line);
 		exit(0);
 	}

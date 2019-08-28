@@ -27,8 +27,8 @@ return (1);
 int sh_help(char **args)
 {
 	(void) args;
-	write(1, "Welcome to our own shell, We are the Caicedo's Brother's\n", 59);
-	write(1, "Our current Built-ins are \n cd \n exit \n help\n", 45);
+	write(STDOUT_FILENO, "Welcome to our own shell.\n", 26);
+	write(STDOUT_FILENO, "Our current Built-ins are \n cd \n exit \n help\n", 45);
 return (1);
 }
 

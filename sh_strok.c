@@ -18,7 +18,7 @@ char **sh_strok(char *line)
 	{
 		perror("Error to allocate size");
 		free(tokens);
-		exit(1);
+		exit(0);
 	}
 	tok = strtok(line, "\t\r\n ");
 	i = 0;

@@ -62,7 +62,7 @@ void aux(char **args, char **bin)
 			free_double(bin);
 			if (execve(args[0], args, environ) == -1)
 			{
-				perror("Error diego");
+				perror("./hsh");
 				free_double(args);
 				exit(0);
 			}
