@@ -37,6 +37,7 @@ int sh_help(char **args)
 	write(STDOUT_FILENO, " clear - clear the terminal screen\n", 36);
 	write(STDOUT_FILENO, " cat - print on the standard output\n", 37);
 	write(STDOUT_FILENO, " echo - display a line of text\n", 31);
+	write(STDOUT_FILENO, "  mkdir - create a new folder\n", 30);
 return (1);
 }
 
